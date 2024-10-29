@@ -27,9 +27,14 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: <#T##String#>)
+                            Image(systemName: "sun.max")
+                                .font(.system(size:40))
+                            
+                            Text(weather.weather[0].main)
                         }
                         .frame(width:150, alignment: .leading)
+                        
+                        Spacer()
                         
                         Text(weather.main.feelsLike.roundDouble() + "°")
                             .font(.system(size:100))
