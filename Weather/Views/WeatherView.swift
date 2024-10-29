@@ -32,7 +32,7 @@ struct WeatherView: View {
                             
                             Text(weather.weather[0].main)
                         }
-                        .frame(width:150, alignment: .leading)
+                        .frame(width:120, alignment: .leading)
                         
                         Spacer()
                         
