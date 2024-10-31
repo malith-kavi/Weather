@@ -24,7 +24,7 @@ struct WelcomeView: View {
             LocationButton(.shareCurrentLocation) {
                 locationManager.requestLocation()
             }
-            .cornerRadius(30)
+            .cornerRadius(15)
             .symbolVariant(.fill)
             .foregroundColor(.white)
         }
